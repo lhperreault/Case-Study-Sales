@@ -37,7 +37,7 @@ In the end I have 7 datasets. The datasets I'm left with are Company, Cyber1 (co
 Below is the connection in Power Bi. 
 ![image](https://github.com/user-attachments/assets/da87b847-9bf9-408e-95a2-24abff2af8c8)
 
-I chose Poer Bi because of the Tool Tip feature where I can have a table and hover and see another page. With this I can visualize and order my contacts in the same order as I do in the Hubspot table and see all the data in one place easily and cleanly. Below is a rough draft of the final visual. I am hovering over a contact name and a pop up of all the info I collected neatly shows the data for that contact only.
+I chose Power Bi because of the Tool Tip feature where I can have a table and hover and see another page. With this I can visualize and order my contacts in the same order as I do in the Hubspot table and see all the data in one place easily and cleanly. Below is a rough draft of the final visual. I am hovering over a contact name and a pop up of all the info I collected neatly shows the data for that contact only.
 
 ![image](https://github.com/user-attachments/assets/c9d575c5-d980-4d6f-ae99-09c36bade338)
 
