@@ -25,9 +25,10 @@ By looking deeper into Hubspot, I found that for each contact there was a compan
 ## Final Solution
 I filter all the prospects to get my list. I get a list of their companies too. I download these two datasets with all their data. I have over 200 variables within 2 datasets. 
 I upload the company dataset using the key parameters and 226 out of the 266 companies I have match. The missing 40 don't have LI essentially. I go on the list and click view in Search. In search you can filter with many options. 
-I filter and get a list of all the CXO's in all these companies. I got around 600. There's no way to download these unless you pay for an extension to do so. Instead I manually do it which does take time. You have to copy and paste by 25 at a time. Copy and paste it to a word doc. This will take like 10 min. Then take the doc and ask chat gpt to make the data into a dataset. This data set should have the CXO name, company name, position, time been there, time in position. I put this into excel and download it. I bring it to VS Code and merge it on Company Name with the Hubspot Prospects.
+I filter and get a list of all the CXO's in all these companies. I got around 600. There's no way to download these unless you pay for an extension to do so. Instead I manually do it which does take time. You have to copy and paste by 25 at a time. Copy and paste it to a word doc. This will take like 10 min. Then take the doc and ask chat gpt to make the data into a dataset. This data set should have the CXO name, company name, position, time been there, time in position. I put this into excel and download it. I bring it to VS Code using python and merge it on Company Name with the Hubspot Prospects.
 Similarly I search, copy and paste, and merge Count of IT people(if any), IT contact name, count of employees.
 ## Implementation
+
 ## Improvements
 ## Other Case Studies 
 Getting prospects from hiring sites that are hiring for IT. 
