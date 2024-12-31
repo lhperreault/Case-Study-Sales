@@ -25,10 +25,28 @@ By looking deeper into Hubspot, I found that for each contact there was a compan
 ## Final Solution
 I filter all the prospects to get my list. I get a list of their companies too. I download these two datasets with all their data. I have over 200 variables within 2 datasets. 
 I upload the company dataset using the key parameters and 226 out of the 266 companies I have match. The missing 40 don't have LI essentially. I go on the list and click view in Search. In search you can filter with many options. 
-I filter and get a list of all the CXO's in all these companies. I got around 600. There's no way to download these unless you pay for an extension to do so. Instead I manually do it which does take time. You have to copy and paste by 25 at a time. Copy and paste it to a word doc. This will take like 10 min. Then take the doc and ask chat gpt to make the data into a dataset. This data set should have the CXO name, company name, position, time been there, time in position. I put this into excel and download it. I bring it to VS Code using python and merge it on Company Name with the Hubspot Prospects.
-Similarly I search, copy and paste, and merge Count of IT people(if any), IT contact name, count of employees.
-## Implementation
+I filter and get a list of all the CXO's in all these companies. I got around 600. There's no way to download these unless you pay for an extension to do so. Instead I manually do it which does take time. You have to copy and paste by 25 at a time. Copy and paste it to a word doc. This will take like 10 min. Then take the doc and ask chat gpt to make the data into a dataset. This data set should have the CXO name, company name, position, time been there, time in position. I put this into excel and download it. I bring it to VS Code using python and merge it on Company Name with the Hubspot Contacts.["COmpany Name"]. I added this code to the repository. 
+Similarly, I search, copy and paste, and merge Count of IT people(if any), IT contact name, and count of employees to the company name. I have to do a fuzzy match to merge it with company name because LI Sales Nav doesn't bring back the exact company name. Some will add Inc. or co. etc. 
+In the end I have 7 datasets. The datasets I'm left with are Company, Cyber1 (contacts), CXO, has_IT, new_IT, News, and Posts.
+Below is the connection in Power Bi. 
+![image](https://github.com/user-attachments/assets/da87b847-9bf9-408e-95a2-24abff2af8c8)
 
+I chose Poer Bi because of the Tool Tip feature where I can have a table and hover and see another page. With this I can visualize and order my contacts in the same order as I do in the Hubspot table and see all the data in one place easily and cleanly. Below is a rough draft of the final visual. I am hovering over a contact name and a pop up of all the info I collected neatly shows the data for that contact only.
+![image](https://github.com/user-attachments/assets/afc7c2fc-0ef6-437e-b50b-1cee79a5c469)
+![image](https://github.com/user-attachments/assets/c9d575c5-d980-4d6f-ae99-09c36bade338)
+
+I can have this displayed on one screen and my hubpost and calling software on my other screen at work and easily scroll as I go updating the contacts in hubspot. 
+At the end of the day or week. I can download the contacts data again and update it in VS CODE and Power BI because I will be changing lead status and adding notes which are two important features I can visualize in the Power BI dashboard.
+
+## Implementation
+I implemented it. I realized knowing whether they have internal IT or not was really helpful. So far it was pretty accurate. Most of the news and posts didn't help me much with opening statements and it was hard to make relevant questions. There were two that had relevant things to say but I am waiting for them to pick up. Knowing the other CXO is nice because I can use ZoomInfo to search for their mobile numbers easily. 
+I realized I need to filter the news and posts a bit more because most of it is irrelevant and takes time to read. Also if there was a way to add the source so I could confirm it would be nice. 
+Another thing is having to manually sort of update the info. It takes about 10 min to change the contact info. But when I search and add new posts it takes 20-30 minutes. 
 ## Improvements
+
 ## Other Case Studies 
-Getting prospects from hiring sites that are hiring for IT. 
+Ultimately, I need to make this easy enough for my coworkers to do this. Right now, they would have to follow about 30 steps to do this themselves even if I set up the code and Power Bi Dashboard.
+Getting prospects from hiring sites that are hiring for IT. Whether they are already a prospect or not I can call them to offer services. 
+I can take contact data and call data and do some EDA on it. Furthermore, with all the data I can use ml to possible find the most likely prospects to need our services; I would need to extract all the data from my coworkers because they have months of call data. 
+I would love to compile all the data I have, send it to a gpt agent that is trained on my "script' and questions I ask, and make real relevant questions based on each scenario. I know I can do this with Python and Chat GPT's API. 
+
